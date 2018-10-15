@@ -1,0 +1,123 @@
+<div class="u-full-width">
+
+  <!-- <div class="row">
+    <div class="ten columns">
+
+    </div>
+    <div class="one column">
+
+    </div>
+  </div> -->
+
+  <h2 class="u-full-width"> {{first}} - {{last}}</h2>
+
+  <div class="events u-full-width">
+    <!-- <div>
+      <div *ngFor="let todo of thursdayTodos;">
+        <p>{{todo.title}}</p>
+      </div>
+    </div> -->
+
+    <ul>
+      <li #sunday class="events-group">
+        <div class="top-info">
+          <span>Sunday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of sundayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #monday class="events-group">
+        <div class="top-info">
+          <span>Monday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of mondayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #tuesday class="events-group">
+        <div class="top-info">
+          <span>Tuesday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of tuesdayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #wednesday class="events-group">
+        <div class="top-info">
+          <span>Wednesday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of wednesdayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #thursday class="events-group">
+        <div class="top-info">
+          <span>Thursday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of thursdayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #friday class="events-group">
+        <div class="top-info">
+          <span>Friday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of fridayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+      <li #saturday class="events-group">
+        <div class="top-info">
+          <span>Saturday</span>
+        </div>
+        <ul>
+          <div *ngFor="let todo of saturdayTodos;">
+            <li class="single-event">
+              <div>
+                <em>- {{todo.title}}</em>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>

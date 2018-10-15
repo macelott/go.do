@@ -1,0 +1,5 @@
+<app-add></app-add>
+<h2>Current Todos</h2>
+<div id="todo-list" dnd-sortable-container [sortableData]="todos$">
+  <app-todo *ngFor="let todo of todos$; index as i;" [todo$]='todo' [i]=i></app-todo>
+</div>

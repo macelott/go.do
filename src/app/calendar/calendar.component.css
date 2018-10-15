@@ -1,0 +1,73 @@
+/* https://codyhouse.co/gem/schedule-template */
+.events {
+  width: 100%;
+  float: left;
+  position: relative;
+  border-radius: 10px;
+}
+
+.events .events-group {
+  width: 14%;
+  float: left;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 0;
+}
+
+.events .top-info {
+  display: table;
+  height: 50px;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 0;
+  width: 100%;
+}
+
+.events .top-info>span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 .5em;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.events .events-group>ul::after {
+  clear: both;
+  content: "";
+  display: block;
+  display: inline-block;
+  content: '-';
+  width: 1px;
+  height: 100%;
+  opacity: 0;
+  color: transparent;
+  display: block;
+  overflow: visible;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.events .single-event {
+  z-index: 3;
+  left: -1px;
+  flex-shrink: 1;
+  height: auto;
+  max-width: none;
+  margin-right: 0;
+  float: left;
+}
+
+.events .single-event div {
+  padding: 1.2em;
+  display: block;
+  height: 100%;
+}
+
+.events .single-event em {
+  display: block;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}

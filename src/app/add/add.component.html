@@ -1,0 +1,19 @@
+<h2>Add</h2>
+
+<div class="row">
+  <div class="eight columns">
+    <input #input class="u-full-width" type="text">
+  </div>
+  <div class="two columns">
+    <div class="content">
+      <div class="row">
+        <div class="col-xs-12 col-12 col-md-4 form-group">
+          <input #date type="button" class="form-control  far fa-edit" [minDate]="minDate" [maxDate]="maxDate" #dp="bsDatepicker" bsDatepicker [(bsValue)]="myDateValue">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="two columns">
+    <button class="button-primary" (click)="onAddTodo(input.value, date.value)">Submit</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div [ngClass]="{'is-done':todo$.done}" class="row todo-tile" (click)="position()" class="todo-item" [class.completed]="todo$.complete" dnd-sortable [sortableIndex]="i" [dragData]="todo$" (onDropSuccess)="onMove($event, i)">
+  <div class="row">
+    <div class="one columns">
+      <!-- <p>{{todo$.done}}</p> -->
+      <input type="checkbox" [checked]="todo$.done" (change)="onCheck()" />
+    </div>
+    <div class="six columns">
+      <p>{{todo$.title}}</p>
+    </div>
+    <div class="three columns">
+      <p>{{todo$.due_todo}}</p>
+    </div>
+    <div class="one columns">
+      <p><i class="far fa-edit" [class.selected]="todo$ === selectedTodo" (click)="onSelect(todo$)"></i></p>
+    </div>
+    <div class="one columns">
+      <p><i class="far fa-trash-alt" (click)="delete(todo$)"></i></p>
+    </div>
+  </div>
+  <app-update *ngIf="edit" [todo$]='todo$'></app-update>
+</div>
